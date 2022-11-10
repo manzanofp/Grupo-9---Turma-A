@@ -19,17 +19,32 @@ public class TheAlgorithmsPrisoner {
             System.out.println("4- Sair");
         switch (opcao) {
                 case 1:
+                    jogo();
+                    break;
                 case 2:
                 case 3:
-                    System.out.println("1- Instruções");
-                    System.out.println("2- Jogar");
-                    System.out.println("3- Créditos");
-                    System.out.println("4- Sair");
+                    creditos();
                     break;
             }
             opcao = sc.nextInt();
         } while (opcao != 4);
-        
     }
+
+    static void jogo(){
+    Scanner sc = new Scanner(System.in);
+        System.out.println("...... Por favor, digite o seu nome: ");
+        String nomeJogador = sc.next();
+        System.out.println("...."+nomeJogador);
+    }
+
+    static void faseUm(){
+
+    }
+
+    static void creditos(){
+        System.out.println("\nEspero que aproveite a sua jogatina!");
+        System.out.println("Este jogo foi produzido pelos Desenvolvedores: Diego Pedro, Felipe Manzano, Sabrina Oliveira, Thalita Brandão, Yasmin Rodrigues");
+    }
+
 }
 
