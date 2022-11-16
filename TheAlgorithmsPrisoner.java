@@ -33,7 +33,7 @@ public class TheAlgorithmsPrisoner {
         do {
 
             Collections.shuffle(alternativasp10);
-            System.out.println("10) A unidade central de Processamento de um computador é a CPU.\nEssas instruções são operações matemáticas relativamente simples, executadas em" +
+            System.out.println("\n10) A unidade central de Processamento de um computador é a CPU.\nEssas instruções são operações matemáticas relativamente simples, executadas em" +
                     "números binários porque os computadores podem entender apenas números binários.\nA CPU é dividada em algumas parte principais, quais são elas?\n");
             System.out.println("a) " + alternativasp10.get(0));
             System.out.println("b) " + alternativasp10.get(1));
@@ -104,7 +104,7 @@ public class TheAlgorithmsPrisoner {
         alternativasp11.add("CPU significa Core Part Unit ou Peça de Unidade Central, em tradução livre.\nTem como função transportar a energia elétrica necessária para o computador funcionar.");
         do {
             Collections.shuffle(alternativasp11);
-            System.out.println("11) Em computação, o que significa a sigla CPU e qual a sua utilidade?\n");
+            System.out.println("\n11) Em computação, o que significa a sigla CPU e qual a sua utilidade?\n");
             System.out.println("a) " + alternativasp11.get(0));
             System.out.println("b) " + alternativasp11.get(1));//resposta correta
             System.out.println("c) " + alternativasp11.get(2));
@@ -172,7 +172,7 @@ public class TheAlgorithmsPrisoner {
         alternativasp12.add("Errado");
         do {
             Collections.shuffle(alternativasp12);
-            System.out.println("12) É na UCP que estão os circuitos de um computador que executam operações nos dados, tais como adição e subtração, digite a alternativa correta: ");
+            System.out.println("\n12) É na UCP que estão os circuitos de um computador que executam operações nos dados, tais como adição e subtração, digite a alternativa correta: ");
             System.out.println("a) " + alternativasp12.get(0)); //resposta correta
             System.out.println("b) " + alternativasp12.get(1));
             System.out.print("Escolha uma alternativa: ");
@@ -213,30 +213,220 @@ public class TheAlgorithmsPrisoner {
     }
     public static void faseQuatro(){
         System.out.println("João: Está muito quente aqui dentro!\n" +
-                "\tComputador: Nessa fase, você vai lidar com o problema de superaquecimento do processador e vai ter que infrentar o vírus meltdown\n ele \"derrete\" a barreira de defesa dos chips,tornado eles extremamente vulneráveis\n"+
+                "\tComputador: Nessa fase, você vai lidar com o problema de superaquecimento do processador e vai ter que infrentar o vírus meltdown\n ele \"derrete\" a barreira de defesa dos chips,tornando eles extremamente vulneráveis\n"+
                 "João: Eu preciso do meu computador de volta!, não vou deixar esse vírus estragar o meu trabalho, vai ser fácil!"+
-                "\tComputador: Você vai precisar de muito conhecimento para derrotar esse poderoso vírus, não se de por vencido - MUAHAHAHAHAHAHAHA\n vai precisar demonstrar todo o seu conhecimento computacional para vencê-lo, lhe desejo sorte.... e falhar, todos os vírus dominarão o seu computador!");
+                "\tComputador: Você vai precisar de muito conhecimento para derrotar esse poderoso vírus, não se de por vencido \n vai precisar demonstrar todo o seu conhecimento computacional para vencê-lo, lhe desejo sorte.... e falhar, todos os vírus dominarão o seu computador!");
         questoesFaseQuatro();
     }
-    public static void questoesFaseTres( {
-        System.out.println("ADD QUESTOES FASE III");
+    public static void questoesFaseTres(){
+        //Pergunta IX
+        Scanner sc = new Scanner(System.in);
+        boolean acertoup9 = false;
+        int contp9 = 0;
+        int pontuacao = 0;
+        List alternativasp9 = new ArrayList();
+        alternativasp9.add("Proteger os arquivos em uso para evitar que sejam corrompidos");
+        alternativasp9.add("Complementar o espaço de armazenamento do HD, persistindo os arquivos de forma definitiva");
+        alternativasp9.add("Executar o processamento de operações de cálculos simples");
+        alternativasp9.add("Permitir um acesso mais rápido aos dados que a CPU vai utilizar nas aplicações que estão em execução"); //resposta correta
+        do {
+
+            Collections.shuffle(alternativasp9);
+            System.out.println("\n9) Qual é o objetivo da memória RAM de um computador?\n");
+            System.out.println("a) " + alternativasp9.get(0));
+            System.out.println("b) " + alternativasp9.get(1));
+            System.out.println("c) " + alternativasp9.get(2));
+            System.out.println("d) " + alternativasp9.get(3));
+            System.out.print("Escolha uma alternativa: ");
+            System.out.println();
+            String respostap9 = sc.next();
+            switch (respostap9) {
+                case "a":
+                case "A":
+                    if (alternativasp9.get(0).equals("Permitir um acesso mais rápido aos dados que a CPU vai utilizar nas aplicações que estão em execução")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup9 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp9++;
+                    }
+                    break;
+                case "b":
+                case "B":
+                    if (alternativasp9.get(1).equals("Permitir um acesso mais rápido aos dados que a CPU vai utilizar nas aplicações que estão em execução")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup9 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp9++;
+                    }
+                    break;
+                case "c":
+                case "C":
+                    if (alternativasp9.get(2).equals("Permitir um acesso mais rápido aos dados que a CPU vai utilizar nas aplicações que estão em execução")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup9 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp9++;
+                    }
+                    break;
+                case "d":
+                case "D":
+                    if (alternativasp9.get(3).equals("Permitir um acesso mais rápido aos dados que a CPU vai utilizar nas aplicações que estão em execução")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup9 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp9++;
+                    }
+                    break;
+                default:
+                    System.out.println("Resposta inválida! Tente Novamente!");
+            }
+        } while (!acertoup9 && contp9 <=2);
+        System.out.println("*--------------***--------------*");
+        System.out.println("Sua pontuação é de: "+pontuacao+" pontos");
+        System.out.println("*--------------***--------------*");
+        //Pergunta VIII
+        boolean acertoup8 = false;
+        int contp8 = 0;
+        List alternativasp8 = new ArrayList();
+        alternativasp8.add("32 Bits");
+        alternativasp8.add("4 TB");
+        alternativasp8.add("3200 Mhz");
+        alternativasp8.add("8 GB");//resposta correta
+        do {
+            Collections.shuffle(alternativasp8);
+            System.out.println("\n8) Em um computador existem vários tipos de memória. Atualmente, uma típica memória RAM possui a capacidade de\n");
+            System.out.println("a) " + alternativasp8.get(0));
+            System.out.println("b) " + alternativasp8.get(1));
+            System.out.println("c) " + alternativasp8.get(2));
+            System.out.println("d) " + alternativasp8.get(3));//resposta correta
+            System.out.print("Escolha uma alternativa: ");
+            System.out.println();
+            String respostap8 = sc.next();
+            switch (respostap8) {
+                case "a":
+                case "A":
+                    if (alternativasp8.get(0).equals("8 GB")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup8 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp8++;
+                    }
+                    break;
+                case "b":
+                case "B":
+                    if (alternativasp8.get(1).equals("8 GB")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup8 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp8++;
+                    }
+                    break;
+                case "c":
+                case "C":
+                    if (alternativasp8.get(2).equals("8 GB")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup8 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp8++;
+                    }
+                    break;
+                case "d":
+                case "D":
+                    if (alternativasp8.get(3).equals("8 GB")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup8 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp8++;
+                    }
+                    break;
+                default:
+                    System.out.println("Resposta inválida! Tente Novamente!");
+            }
+        } while (!acertoup8 && contp8 <=2);
+        System.out.println("*--------------***--------------*");
+        System.out.println("Sua pontuação é de: "+ pontuacao+" pontos");
+        System.out.println("*--------------***--------------*");
+        //Pergunta XII
+        boolean acertoup7 = false;
+        int contp7 = 0;
+        List alternativasp7 = new ArrayList(); //instanciando arrayList para armazenar os valores das respostas na memória
+        alternativasp7.add("Certo"); //resposta correta
+        alternativasp7.add("Errado");
+        do {
+            Collections.shuffle(alternativasp7);
+            System.out.println("\n7) Quando o usuário executa um programa no computador, cabe ao processador buscar as instruções necessárias na memória RAM desse computador.\n");
+            System.out.println("a) " + alternativasp7.get(0)); //resposta correta
+            System.out.println("b) " + alternativasp7.get(1));
+            System.out.print("Escolha uma alternativa: ");
+            String respostap7 = sc.next();
+            switch (respostap7) {
+                case "a":
+                case "A":
+                    if (alternativasp7.get(0).equals("Certo")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup7 = true;
+                        pontuacao++;
+
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp7++;
+                    }
+                    break;
+                case "b":
+                case "B":
+                    if (alternativasp7.get(1).equals("Certo")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup7 = true;
+                        pontuacao++;
+
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp7++;
+                    }
+                    break;
+                default:
+                    System.out.println("Resposta inválida! Tente Novamente!");
+
+            }
+        } while (!acertoup7 && contp7 <=2);
+        System.out.println("*--------------***--------------*");
+        System.out.println("Sua pontuação é de: "+pontuacao+" pontos");
+        System.out.println("*--------------***--------------*");
     }
     public static void faseTres(){
-        System.out.println("ADD FASE III");
+        System.out.println("Seguindo mais adiante em meio aquele caos, ele se depara com o vírus Poweliks, que está danificando a memória RAM, fazendo que o antivírus ataque o João achando que ele é um vírus\n"+
+                "\tComputador: Vamos João, você já está passando da metade do jogo! não deixe um simples virus te derrotar!");
+        questoesFaseTres();
     }
-    public static void questoesFaseDois( {
+    public static void questoesFaseDois(){
         System.out.println("ADD QUESTOES FASE II");
     }
     public static void faseDois(){
-
         System.out.println("ADD FASE II");
+        questoesFaseDois();
     }
     public static void questoesFaseUm() {
         //Pergunta I
             Scanner input = new Scanner(System.in);
             boolean acertou = false;
             int cont = 0;
-            int pontuacao = 0;
+            int pontuacao = 0;    //iniciando a váriavel de pontuação como global
             List alternativas = new ArrayList();
             alternativas.add("Apenas I"); // resposta correta
             alternativas.add("I e II");
@@ -245,7 +435,7 @@ public class TheAlgorithmsPrisoner {
             alternativas.add("Todas as afirmações estão corretas");
             do {
                 Collections.shuffle(alternativas);
-                System.out.println("1) Nos últimos anos, a tecnologia passou por um processo de constante evolução e muito se tem dito sobre como a tecnologia como um todo transformou o modo de vida na sociedade. Tendo em vista, especificamente, o conceito de algoritmo, especifique a definição que melhor se aplica ao conceito:");
+                System.out.println("1) Nos últimos anos, a tecnologia passou por um processo de constante evolução e muito se tem dito sobre como a tecnologia como um todo transformou o modo de vida na sociedade.\nTendo em vista, especificamente, o conceito de algoritmo, especifique a definição que melhor se aplica ao conceito:");
                 System.out.println("\nI) É uma sequência lógica, finita e bem definida de instruções que devem ser seguidas para resolver um problema ou executar uma tarefa\n" +
                         "II)É uma sequência infinita de instruções que devem ser seguidas para criar um problema ou executar uma tarefa\n" +
                         "III)É uma sequência infinita de instruções que devem ser seguidas de maneira aleatória \n");
@@ -331,7 +521,7 @@ public class TheAlgorithmsPrisoner {
         alternativasp2.add("Todas as afirmações estão corretas");
         do {
             Collections.shuffle(alternativasp2);
-            System.out.println("2)Um dos principais preceitos utilizados no desenvolvimento do pensamento algorítmico, é a decomposição do problema, ou seja, é a capacidade de dividir um problema maior em etapas ordenadas a fim de resolver de forma mais simples. Seguindo essa linha de raciocínio, assinale as alternativas que correspondem às etapas do processo cotidiano de fazer café que estão faltando:\n");
+            System.out.println("\n2) Um dos principais preceitos utilizados no desenvolvimento do pensamento algorítmico, é a decomposição do problema, ou seja, é a capacidade de dividir um problema maior em etapas ordenadas.\nSeguindo essa linha de raciocínio, assinale as alternativas que correspondem às etapas do processo cotidiano de fazer café que estão faltando:\n");
             System.out.println("1.Pegar um bule.\n2.Encher com água.\n3.Levar ao fogo.\n4.Acrescentar a quantidade de açúcar desejada na água.\n5.Pegar o bule e o coador.\n6.Despejar água fervente no coador.\n7.Após coar todo o café, retirar o coador.");
             System.out.println("\nI) Esperar até ferver. \nII)Servir.\nIII)Colocar o pó de café na medida desejada no coador.\nIV)Levar a geladeira.\nV)Acrescentar a quantidade de sal desejada.\n");
 
@@ -405,7 +595,7 @@ public class TheAlgorithmsPrisoner {
             System.out.println("*--------------***--------------*");
             System.out.println("Sua pontuação é de: "+ pontuacao+" pontos");
             System.out.println("*--------------***--------------*");
-        //Fase III
+        //Pergunta III
             Scanner inputp3 = new Scanner(System.in);
             boolean acertoup3 = false;
             int contp3 = 0;
@@ -417,7 +607,7 @@ public class TheAlgorithmsPrisoner {
             alternativasp3.add("Nenhuma alternativa está correta");
             do {
                 Collections.shuffle(alternativasp3);
-                System.out.println("3) Agora que você já sabe sobre o que é um algoritmo, de quais maneiras ele pode ser representado:");
+                System.out.println("\n3) Agora que você já sabe sobre o que é um algoritmo, de quais maneiras ele pode ser representado:\n");
 
                 System.out.println("a) " + alternativasp3.get(0));
                 System.out.println("b) " + alternativasp3.get(1));
@@ -496,22 +686,22 @@ public class TheAlgorithmsPrisoner {
             System.out.println("*--------------***--------------*");
     }
     public static void faseUm() {
-        System.out.println("\tComputador: “O Seu primeiro oponente é o vírus que está no HD, o Ransomware” - disse uma voz robótica que parecia quase que um grunhido, uma voz robótica que ele jurava ser fruto da sua imaginação.\n" +
+        System.out.println("\tComputador: O Seu primeiro oponente é o vírus que está no HD, o Ransomware - disse uma voz robótica que parecia quase que um grunhido, uma voz robótica que ele jurava ser fruto da sua imaginação.\n" +
                 "João: O que? Ransomware? Oponente? O que está acontecendo? Estou ficando maluco, não é possível! - esmoreceu João.\n" +
                 " \tComputador: Que falta de educação a minha, esqueci de me apresentar! Serei seu guia durante essa jornada, pode me chamar de mestre se quiser, sempre me sinto melhor quando reconhecem minha genialidade!\n" +
                 "João: Mestre? Acho que quem está maluco é você!\n" +
                 " \tComputador: Bom, vou ignorar seus insultos em consideração a amizade que vamos criar, afinal serão 5 longas jornadas de riso, choro e muita aventura. No final vamos nos tornar bons amigos, você vai até dizer que não sabe como viveu milênios sem a minha existência - falou entre risos.\n" +
                 "João: Não posso acreditar nisso, me explica de modo que uma pessoa normal possa entender, por favor, chega de enrolação! Me fale agora quem é você? Como posso sair daqui? Por que não consigo me movimentar e me sinto alheio à realidade?\n" +
-                " \tComputador: Está bem, cansei da brincadeira! Você é uma pessoa bem amarga, aparentemente nossa jornada vai ser ainda mais longa do que eu esperava: nossa jornada terá ao todo 5 trajetórias, se você passar por todas com excelência você está livre para retornar a sua vidinha de sempre. Na primeira fase você precisa responder a três questões, se você acertar as três, passa para próxima fase!\n" +
+                " \tComputador: Está bem, cansei da brincadeira! Você é uma pessoa bem amarga, aparentemente nossa jornada vai ser ainda mais longa do que eu esperava: nossa jornada terá ao todo 5 trajetórias.\n Se você passar por todas com excelência você está livre para retornar a sua vidinha de sempre.\n Na primeira fase você precisa responder a três questões, se você acertar as três, passa para próxima fase!\n" +
                 "João: E se eu errar?\n" +
                 " \tComputador: Se você errar, você vai ter uma surpresa!\n");
        questoesFaseUm();
 
     }
-
     public static void jogo(){
+        System.out.println("\nMuito bem! você escolheu ajudar o João a desvendar o mistério do que aconteceu com o seu Computador....\nEspero que essa jornada seja fácil para vocês dois!");
         faseUm();
-        System.out.println("Nessa fase você aprendeu um pouco sobre o pensamento computacional e como ele é o ponto de partida para a aprendizagem, entendimento dos conceitos básicos e aplicabilidade. Você passou para a próxima fase, nesta etapa você vai precisar derrotar o vírus Jellyfish, aperte () para continuar. \n");
+        System.out.println("\nNessa fase você aprendeu um pouco sobre o pensamento computacional e como ele é o ponto de partida para a aprendizagem, entendimento dos conceitos básicos e aplicabilidade.\nVocê passou para a próxima fase, nesta etapa você vai precisar derrotar o vírus Jellyfish, apenas continue sua jornada.... \n");
         faseDois();
         faseTres();
         faseQuatro();
