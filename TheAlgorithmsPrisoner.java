@@ -4,25 +4,234 @@ import java.util.Collections;
 import java.util.List;
 
 public class TheAlgorithmsPrisoner {
-    static void sair(){
+    public static void sair(){
         System.out.println("*------- JOGO ENCERRADO, OBRIGADO POR JOGAR! -------*");
         System.exit(0);
     }
-    static void creditos(){
+    public static void creditos(){
         System.out.println("\nEspero que aproveite a sua jogatina!");
         System.out.println("Este jogo foi produzido pelos Desenvolvedores: \n Diego Pedro\n Felipe Manzano\n Sabrina Oliveira\n Talita Brandão\n Yasmin Rodrigues");
     }
+    public static void questoesFaseCinco(){
+        System.out.println("ADD QUESTOES FASE IV");
+    }
+    public  static void faseCinco(){
+        System.out.println("ADD FASE V");
+        questoesFaseCinco();
+    }
+    public static void questoesFaseQuatro(){
+        //Pergunta X
+        Scanner sc = new Scanner(System.in);
+        boolean acertoup10 = false;
+        int contp10 = 0;
+        int pontuacao = 0;
+        List alternativasp10 = new ArrayList();
+        alternativasp10.add("Unidade Lógica e aritmética, Unidade de Controle e Registradores"); // resposta correta
+        alternativasp10.add("Unidade Lógica e Barramento");
+        alternativasp10.add("Barramento,Unidade de Controle e Registradores");
+        alternativasp10.add("Memória Principal e Adaptador");
+        do {
 
+            Collections.shuffle(alternativasp10);
+            System.out.println("10) A unidade central de Processamento de um computador é a CPU.\nEssas instruções são operações matemáticas relativamente simples, executadas em" +
+                    "números binários porque os computadores podem entender apenas números binários.\nA CPU é dividada em algumas parte principais, quais são elas?\n");
+            System.out.println("a) " + alternativasp10.get(0));
+            System.out.println("b) " + alternativasp10.get(1));
+            System.out.println("c) " + alternativasp10.get(2));
+            System.out.println("d) " + alternativasp10.get(3));
+            System.out.print("Escolha uma alternativa: ");
+            System.out.println();
+            String respostap10 = sc.next();
+            switch (respostap10) {
+                case "a":
+                case "A":
+                    if (alternativasp10.get(0).equals("Unidade Lógica e aritmética, Unidade de Controle e Registradores")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup10 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp10++;
+                    }
+                    break;
+                case "b":
+                case "B":
+                    if (alternativasp10.get(1).equals("Unidade Lógica e aritmética, Unidade de Controle e Registradores")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup10 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp10++;
+                    }
+                    break;
+                case "c":
+                case "C":
+                    if (alternativasp10.get(2).equals("Unidade Lógica e aritmética, Unidade de Controle e Registradores")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup10 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp10++;
+                    }
+                    break;
+                case "d":
+                case "D":
+                    if (alternativasp10.get(3).equals("Unidade Lógica e aritmética, Unidade de Controle e Registradores")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup10 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp10++;
+                    }
+                    break;
+                default:
+                    System.out.println("Resposta inválida! Tente Novamente!");
+            }
+        } while (!acertoup10 && contp10 <=2);
+        System.out.println("*--------------***--------------*");
+        System.out.println("Sua pontuação é de: "+pontuacao+" pontos");
+        System.out.println("*--------------***--------------*");
+        //Pergunta XI
+        boolean acertoup11 = false;
+        int contp11 = 0;
+        List alternativasp11 = new ArrayList();
+        alternativasp11.add("CPU significa Control Pack Universal ou Pacote de Controle Universal, em tradução livre.\nBasicamente é o conjunto de hardware necessário para montar um computador.");
+        alternativasp11.add("CPU significa Central Processing Unit ou Unidade Central de Processamento, em tradução livre.\nÉ a parte de um sistema computacional que realiza as instruções de um programa de computador, para executar a aritmética básica, lógica e a entrada e saída de dados.");//resposta correta
+        alternativasp11.add("CPU significa Collar Pair Uniform ou Par de Colar Uniforme, em tradução livre.\nTrata-se do \"cérebro\" do computador, que funciona em dois componentes interligados - em formato de colar, sendo uma analogia ao cérebro e cerebelo do corpo humano.");
+        alternativasp11.add("CPU significa Core Part Unit ou Peça de Unidade Central, em tradução livre.\nTem como função transportar a energia elétrica necessária para o computador funcionar.");
+        do {
+            Collections.shuffle(alternativasp11);
+            System.out.println("11) Em computação, o que significa a sigla CPU e qual a sua utilidade?\n");
+            System.out.println("a) " + alternativasp11.get(0));
+            System.out.println("b) " + alternativasp11.get(1));//resposta correta
+            System.out.println("c) " + alternativasp11.get(2));
+            System.out.println("d) " + alternativasp11.get(3));
+            System.out.print("Escolha uma alternativa: ");
+            System.out.println();
+            String respostap11 = sc.next();
+            switch (respostap11) {
+                case "a":
+                case "A":
+                    if (alternativasp11.get(0).equals("CPU significa Central Processing Unit ou Unidade Central de Processamento, em tradução livre.\nÉ a parte de um sistema computacional que realiza as instruções de um programa de computador, para executar a aritmética básica, lógica e a entrada e saída de dados.")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup11 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp11++;
+                    }
+                    break;
+                case "b":
+                case "B":
+                    if (alternativasp11.get(1).equals("CPU significa Central Processing Unit ou Unidade Central de Processamento, em tradução livre.\nÉ a parte de um sistema computacional que realiza as instruções de um programa de computador, para executar a aritmética básica, lógica e a entrada e saída de dados.")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup11 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp11++;
+                    }
+                    break;
+                case "c":
+                case "C":
+                    if (alternativasp11.get(2).equals("CPU significa Central Processing Unit ou Unidade Central de Processamento, em tradução livre.\nÉ a parte de um sistema computacional que realiza as instruções de um programa de computador, para executar a aritmética básica, lógica e a entrada e saída de dados.")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup11 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp11++;
+                    }
+                    break;
+                case "d":
+                case "D":
+                    if (alternativasp11.get(3).equals("CPU significa Central Processing Unit ou Unidade Central de Processamento, em tradução livre.\nÉ a parte de um sistema computacional que realiza as instruções de um programa de computador, para executar a aritmética básica, lógica e a entrada e saída de dados.")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup11 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp11++;
+                    }
+                    break;
+                default:
+                    System.out.println("Resposta inválida! Tente Novamente!");
+            }
+        } while (!acertoup11 && contp11 <=2);
+        System.out.println("*--------------***--------------*");
+        System.out.println("Sua pontuação é de: "+ pontuacao+" pontos");
+        System.out.println("*--------------***--------------*");
+        //Pergunta XII
+        boolean acertoup12 = false;
+        int contp12 = 0;
+        List alternativasp12 = new ArrayList(); //instanciando arrayList para armazenar os valores das respostas na memória
+        alternativasp12.add("Certo"); //resposta correta
+        alternativasp12.add("Errado");
+        do {
+            Collections.shuffle(alternativasp12);
+            System.out.println("12) É na UCP que estão os circuitos de um computador que executam operações nos dados, tais como adição e subtração, digite a alternativa correta: ");
+            System.out.println("a) " + alternativasp12.get(0)); //resposta correta
+            System.out.println("b) " + alternativasp12.get(1));
+            System.out.print("Escolha uma alternativa: ");
+            String respostap12 = sc.next();
+            switch (respostap12) {
+                case "a":
+                case "A":
+                    if (alternativasp12.get(0).equals("Certo")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup12 = true;
+                        pontuacao++;
+
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp12++;
+                    }
+                    break;
+                case "b":
+                case "B":
+                    if (alternativasp12.get(1).equals("Certo")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup12 = true;
+                        pontuacao++;
+
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp12++;
+                    }
+                    break;
+                default:
+                    System.out.println("Resposta inválida! Tente Novamente!");
+
+            }
+        } while (!acertoup12 && contp12 <=2);
+        System.out.println("*--------------***--------------*");
+        System.out.println("Sua pontuação é de: "+pontuacao+" pontos");
+        System.out.println("*--------------***--------------*");
+    }
+    public static void faseQuatro(){
+        System.out.println("João: Está muito quente aqui dentro!\n" +
+                "\tComputador: Nessa fase, você vai lidar com o problema de superaquecimento do processador e vai ter que infrentar o vírus meltdown\n ele \"derrete\" a barreira de defesa dos chips,tornado eles extremamente vulneráveis\n"+
+                "João: Eu preciso do meu computador de volta!, não vou deixar esse vírus estragar o meu trabalho, vai ser fácil!"+
+                "\tComputador: Você vai precisar de muito conhecimento para derrotar esse poderoso vírus, não se de por vencido - MUAHAHAHAHAHAHAHA\n vai precisar demonstrar todo o seu conhecimento computacional para vencê-lo, lhe desejo sorte.... e falhar, todos os vírus dominarão o seu computador!");
+        questoesFaseQuatro();
+    }
+    public static void questoesFaseTres( {
+        System.out.println("ADD QUESTOES FASE III");
+    }
     public static void faseTres(){
         System.out.println("ADD FASE III");
-
-
+    }
+    public static void questoesFaseDois( {
+        System.out.println("ADD QUESTOES FASE II");
     }
     public static void faseDois(){
 
         System.out.println("ADD FASE II");
     }
-        public static void questoes() {
+    public static void questoesFaseUm() {
         //Pergunta I
             Scanner input = new Scanner(System.in);
             boolean acertou = false;
@@ -35,7 +244,6 @@ public class TheAlgorithmsPrisoner {
             alternativas.add("Apenas II");
             alternativas.add("Todas as afirmações estão corretas");
             do {
-
                 Collections.shuffle(alternativas);
                 System.out.println("1) Nos últimos anos, a tecnologia passou por um processo de constante evolução e muito se tem dito sobre como a tecnologia como um todo transformou o modo de vida na sociedade. Tendo em vista, especificamente, o conceito de algoritmo, especifique a definição que melhor se aplica ao conceito:");
                 System.out.println("\nI) É uma sequência lógica, finita e bem definida de instruções que devem ser seguidas para resolver um problema ou executar uma tarefa\n" +
@@ -288,8 +496,8 @@ public class TheAlgorithmsPrisoner {
             System.out.println("*--------------***--------------*");
     }
     public static void faseUm() {
-        System.out.println("Computador: “O Seu primeiro oponente é o vírus que está no HD, o Ransomware” - disse uma voz robótica que parecia quase que um grunhido, uma voz robótica que ele jurava ser fruto da sua imaginação.\n" +
-                "\tJoão: O que? Ransomware? Oponente? O que está acontecendo? Estou ficando maluco, não é possível! - esmoreceu João.\n" +
+        System.out.println("\tComputador: “O Seu primeiro oponente é o vírus que está no HD, o Ransomware” - disse uma voz robótica que parecia quase que um grunhido, uma voz robótica que ele jurava ser fruto da sua imaginação.\n" +
+                "João: O que? Ransomware? Oponente? O que está acontecendo? Estou ficando maluco, não é possível! - esmoreceu João.\n" +
                 " \tComputador: Que falta de educação a minha, esqueci de me apresentar! Serei seu guia durante essa jornada, pode me chamar de mestre se quiser, sempre me sinto melhor quando reconhecem minha genialidade!\n" +
                 "João: Mestre? Acho que quem está maluco é você!\n" +
                 " \tComputador: Bom, vou ignorar seus insultos em consideração a amizade que vamos criar, afinal serão 5 longas jornadas de riso, choro e muita aventura. No final vamos nos tornar bons amigos, você vai até dizer que não sabe como viveu milênios sem a minha existência - falou entre risos.\n" +
@@ -297,7 +505,7 @@ public class TheAlgorithmsPrisoner {
                 " \tComputador: Está bem, cansei da brincadeira! Você é uma pessoa bem amarga, aparentemente nossa jornada vai ser ainda mais longa do que eu esperava: nossa jornada terá ao todo 5 trajetórias, se você passar por todas com excelência você está livre para retornar a sua vidinha de sempre. Na primeira fase você precisa responder a três questões, se você acertar as três, passa para próxima fase!\n" +
                 "João: E se eu errar?\n" +
                 " \tComputador: Se você errar, você vai ter uma surpresa!\n");
-       questoes();
+       questoesFaseUm();
 
     }
 
@@ -305,8 +513,9 @@ public class TheAlgorithmsPrisoner {
         faseUm();
         System.out.println("Nessa fase você aprendeu um pouco sobre o pensamento computacional e como ele é o ponto de partida para a aprendizagem, entendimento dos conceitos básicos e aplicabilidade. Você passou para a próxima fase, nesta etapa você vai precisar derrotar o vírus Jellyfish, aperte () para continuar. \n");
         faseDois();
-        faseDois();
         faseTres();
+        faseQuatro();
+        faseCinco();
 
     }
     public static void instrucoes(){
