@@ -494,7 +494,6 @@ public class TheAlgorithmsPrisoner {
         alternativasp9.add("Executar o processamento de operações de cálculos simples");
         alternativasp9.add("Permitir um acesso mais rápido aos dados que a CPU vai utilizar nas aplicações que estão em execução"); //resposta correta
         do {
-
             Collections.shuffle(alternativasp9);
             System.out.println("\n7) Qual é o objetivo da memória RAM de um computador?");
             System.out.println("a) " + alternativasp9.get(0));
