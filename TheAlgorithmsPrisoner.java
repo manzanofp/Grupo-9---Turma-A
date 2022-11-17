@@ -683,6 +683,182 @@ public class TheAlgorithmsPrisoner {
         questoesFaseTres();
     }
     public static void questoesFaseDois(){
+        Scanner leitor = new Scanner(System.in);
+            boolean certo = false;
+            boolean respostaCerta = false;
+            int pontuacao = 0;
+            int cont = 0;
+            List questoes = new ArrayList();
+            questoes.add("As variáveis são endereços de memória que armazenam os dados manipulados pelos algoritmos."); //Resposta correta
+            questoes.add("As variáveis são endereços de memória que armazenam vetores.");
+            questoes.add("As variáveis são estruturas de dados que que armazenam uma coleção de elementos.");
+            questoes.add("As variáveis são coleções usadas para armazenar e manipular dados de um método para outro.");
+            questoes.add("As variáveis sao séries de vetores do mesmo tipo referenciados por um único nome.");
+
+            do {
+                Collections.shuffle(questoes);
+                System.out.println("Primeiro precisamos entender o que são variáveis: \n");
+
+                System.out.println("A - " + questoes.get(0));
+                System.out.println("B - " + questoes.get(1));
+                System.out.println("C - " + questoes.get(2));
+                System.out.println("D - " + questoes.get(3));
+                System.out.println("E - " + questoes.get(4));
+
+                System.out.println("Escolha a alternativa que mais se encaixe: ");
+                String resposta = leitor.nextLine();
+
+                switch (resposta) {
+                    case "A":
+                    case "a":
+                        if (questoes.get(0).equals("As variáeis são endereços de memória que armazenam os dados manipulados pelos algoritmos.")) {
+                            System.out.println("Resposta certa!");
+                            certo = true;
+                            pontuacao++;
+                        } else {
+                            System.out.println("Resposta incorreta!");
+                            cont++;
+                        }
+                        break;
+                    case "B":
+                    case "b":
+                        if (questoes.get(1).equals("A variáeis são endereços de memória que armazenam os dados manipulados pelos algoritmos.")) {
+                            System.out.println("Resposta certa!");
+                            certo = true;
+                            pontuacao++;
+                        } else {
+                            System.out.println("Resposta incorreta!");
+                            cont++;
+                        }
+                        break;
+                    case "C":
+                    case "c":
+                        if (questoes.get(2).equals("As variáeis são endereços de memória que armazenam os dados manipulados pelos algoritmos.")) {
+                            System.out.println("Resposta certa!");
+                            certo = true;
+                            pontuacao++;
+                        } else {
+                            System.out.println("Resposta incorreta!");
+                            cont++;
+                        }
+                        break;
+                    case "D":
+                    case "d":
+                        if (questoes.get(3).equals("As variáeis são endereços de memória que armazenam os dados manipulados pelos algoritmos.")) {
+                            System.out.println("Resposta certa!");
+                            certo = true;
+                            pontuacao++;
+                        } else {
+                            System.out.println("Resposta incorreta!");
+                            cont++;
+                        }
+                        break;
+                    case "E":
+                    case "e":
+                        if (questoes.get(4).equals("As variáeis são endereços de memória que armazenam os dados manipulados pelos algoritmos.")) {
+                            System.out.println("Resposta certa!");
+                            certo = true;
+                            pontuacao++;
+                        } else {
+                            System.out.println("Resposta incorreta!");
+                            cont++;
+                        }
+                        break;
+                    default:
+                        System.out.println("Escolha inválida!");
+                }
+            } while (!certo && cont <= 2);
+            System.out.println("__________________________");
+            System.out.println("Sua pontuação é de: " + pontuacao + "ponto");
+            System.out.println("_________________________________");
+
+            //Segunda fase
+            Scanner leitor2 = new Scanner(System.in);
+            boolean certo2 = false;
+            int cont2 = 0;
+            List questoes2 = new ArrayList();
+            questoes2.add("String"); //resposta correta
+            questoes2.add("Double");
+            questoes2.add("Boolean");
+            questoes2.add("Int");
+            questoes2.add("Char");
+
+            do {
+                Collections.shuffle(questoes2);
+                System.out.println("Qual tipo de variável é capaz de armazenar uma sequência de caracteres: \n");
+
+                System.out.println("A - " + questoes2.get(0));
+                System.out.println("B - " + questoes2.get(1));
+                System.out.println("C - " + questoes2.get(2));
+                System.out.println("D - " + questoes2.get(3));
+                System.out.println("E - " + questoes2.get(4));
+
+                System.out.println("Escolha a alternativa que mais se encaixe: ");
+                String resposta2 = leitor2.nextLine();
+
+                switch (resposta2) {
+                    case "A":
+                    case "a":
+                        if (questoes2.get(0).equals("String")) {
+                            System.out.println("Resposta certa!");
+                            certo2 = true;
+                            pontuacao++;
+                        } else {
+                            System.out.println("Resposta incorreta!");
+                            cont2++;
+                        }
+                        break;
+                    case "B":
+                    case "b":
+                        if (questoes2.get(1).equals("String")) {
+                            System.out.println("Resposta certa!");
+                            certo2 = true;
+                            pontuacao++;
+                        } else {
+                            System.out.println("Resposta incorreta!");
+                            cont2++;
+                        }
+                        break;
+                    case "C":
+                    case "c":
+                        if (questoes2.get(2).equals("String")) {
+                            System.out.println("Resposta certa!");
+                            certo2 = true;
+                            pontuacao++;
+                        } else {
+                            System.out.println("Resposta incorreta!");
+                            cont2++;
+                        }
+                        break;
+                    case "D":
+                    case "d":
+                        if (questoes2.get(3).equals("String")) {
+                            System.out.println("Resposta certa!");
+                            certo2 = true;
+                            pontuacao++;
+                        } else {
+                            System.out.println("Resposta incorreta!");
+                            cont2++;
+                        }
+                        break;
+                    case "E":
+                    case "e":
+                        if (questoes2.get(4).equals("String")) {
+                            System.out.println("Resposta certa!");
+                            certo2 = true;
+                            pontuacao++;
+                        } else {
+                            System.out.println("Resposta incorreta!");
+                            cont2++;
+                        }
+                        break;
+                    default:
+                        System.out.println("Escolha inválida!");
+                }
+            } while (!certo2 && cont2 <= 2);
+            System.out.println("__________________________");
+            System.out.println("Sua pontuação é de: " + pontuacao + "ponto");
+            System.out.println("_________________________________");
 
     }
     public static void faseDois(){
@@ -691,6 +867,15 @@ public class TheAlgorithmsPrisoner {
         System.out.println("            FASE II              ");
         System.out.println("*--------------***--------------*");
         questoesFaseDois();
+        System.out.println("\tJõao estava confuso com o que estava acontecendo, mas aos poucos tudo estava ficando mais claro, aquilo não era um sonho.\n");
+System.out.println("\tComputador: Vamos, a segunda etapa está prestes a começar, agora você vai agir na placa de video, " +
+        "especificadamente contra o víros Jellyfish, utilizado para danificar e distorcer as imagens, dificultando a compreenção do ambiente.\n");
+System.out.println("\tJoão: Como vai ser a segunda fase?\n");
+System.out.println("\tComputador: Na segunda fase você vai aprender sobre os tipos de variáveis e suas funções, " +
+        "vamos você já sabe como vai funcionar, três perguntas para...\n");
+System.out.println("\tJoão: Eu sei, três perguntas para derrotar um virus que atinge uma peça do computador.\n");
+
+System.out.println("\tComputador: Muito bem, você aprende rápido. Como você já sabe como funciona, vamos as perguntas... \n");
     }
     public static void questoesFaseUm() {
         //Pergunta I
