@@ -16,7 +16,11 @@ public class TheAlgorithmsPrisoner {
         System.out.println("ADD QUESTOES FASE IV");
     }
     public  static void faseCinco(){
-        System.out.println("ADD FASE V");
+        System.out.println();
+        System.out.println("*--------------***--------------*");
+        System.out.println("             FASE V              ");
+        System.out.println("*--------------***--------------*");
+        System.out.println();
         questoesFaseCinco();
     }
     public static void questoesFaseQuatro(){
@@ -25,16 +29,15 @@ public class TheAlgorithmsPrisoner {
         boolean acertoup10 = false;
         int contp10 = 0;
         int pontuacao = 0;
-        List alternativasp10 = new ArrayList();
+        List alternativasp10 = new ArrayList();  //instanciando o array de respostas
         alternativasp10.add("Unidade Lógica e aritmética, Unidade de Controle e Registradores"); // resposta correta
-        alternativasp10.add("Unidade Lógica e Barramento");
+        alternativasp10.add("Unidade Lógica e Barramento");       //alocando as respostas em espaços na memória dentro do Array
         alternativasp10.add("Barramento,Unidade de Controle e Registradores");
         alternativasp10.add("Memória Principal e Adaptador");
         do {
-
             Collections.shuffle(alternativasp10);
             System.out.println("\n10) A unidade central de Processamento de um computador é a CPU.\nEssas instruções são operações matemáticas relativamente simples, executadas em" +
-                    "números binários porque os computadores podem entender apenas números binários.\nA CPU é dividada em algumas parte principais, quais são elas?\n");
+                    "números binários porque os computadores podem entender apenas números binários.\nA CPU é dividada em algumas parte principais, quais são elas?");
             System.out.println("a) " + alternativasp10.get(0));
             System.out.println("b) " + alternativasp10.get(1));
             System.out.println("c) " + alternativasp10.get(2));
@@ -91,6 +94,7 @@ public class TheAlgorithmsPrisoner {
                     System.out.println("Resposta inválida! Tente Novamente!");
             }
         } while (!acertoup10 && contp10 <=2);
+        System.out.println();
         System.out.println("*--------------***--------------*");
         System.out.println("Sua pontuação é de: "+pontuacao+" pontos");
         System.out.println("*--------------***--------------*");
@@ -104,7 +108,7 @@ public class TheAlgorithmsPrisoner {
         alternativasp11.add("CPU significa Core Part Unit ou Peça de Unidade Central, em tradução livre.\nTem como função transportar a energia elétrica necessária para o computador funcionar.");
         do {
             Collections.shuffle(alternativasp11);
-            System.out.println("\n11) Em computação, o que significa a sigla CPU e qual a sua utilidade?\n");
+            System.out.println("\n11) Em computação, o que significa a sigla CPU e qual a sua utilidade?");
             System.out.println("a) " + alternativasp11.get(0));
             System.out.println("b) " + alternativasp11.get(1));//resposta correta
             System.out.println("c) " + alternativasp11.get(2));
@@ -161,6 +165,7 @@ public class TheAlgorithmsPrisoner {
                     System.out.println("Resposta inválida! Tente Novamente!");
             }
         } while (!acertoup11 && contp11 <=2);
+        System.out.println();
         System.out.println("*--------------***--------------*");
         System.out.println("Sua pontuação é de: "+ pontuacao+" pontos");
         System.out.println("*--------------***--------------*");
@@ -207,15 +212,21 @@ public class TheAlgorithmsPrisoner {
 
             }
         } while (!acertoup12 && contp12 <=2);
+        System.out.println();
         System.out.println("*--------------***--------------*");
         System.out.println("Sua pontuação é de: "+pontuacao+" pontos");
         System.out.println("*--------------***--------------*");
     }
     public static void faseQuatro(){
+        System.out.println();
+        System.out.println("*--------------***--------------*");
+        System.out.println("             FASE IV             ");
+        System.out.println("*--------------***--------------*");
+        System.out.println();
         System.out.println("João: Está muito quente aqui dentro!\n" +
-                "\tComputador: Nessa fase, você vai lidar com o problema de superaquecimento do processador e vai ter que infrentar o vírus meltdown\n ele \"derrete\" a barreira de defesa dos chips,tornando eles extremamente vulneráveis\n"+
+                "\tComputador: Nessa fase, você vai lidar com o problema de superaquecimento do processador e vai ter que infrentar o vírus meltdown\n ele estraga a barreira de defesa dos chips,tornando eles extremamente vulneráveis\n"+
                 "João: Eu preciso do meu computador de volta!, não vou deixar esse vírus estragar o meu trabalho, vai ser fácil!"+
-                "\tComputador: Você vai precisar de muito conhecimento para derrotar esse poderoso vírus, não se de por vencido \n vai precisar demonstrar todo o seu conhecimento computacional para vencê-lo, lhe desejo sorte.... e falhar, todos os vírus dominarão o seu computador!");
+                "\tComputador: Você vai precisar de muito conhecimento para derrotar esse poderoso vírus, não se de por vencido \n vai precisar demonstrar todo o seu conhecimento computacional para vencê-lo, lhe desejo sorte....\ne se falhar, todos os vírus dominarão o seu computador!");
         questoesFaseQuatro();
     }
     public static void questoesFaseTres(){
@@ -232,7 +243,7 @@ public class TheAlgorithmsPrisoner {
         do {
 
             Collections.shuffle(alternativasp9);
-            System.out.println("\n9) Qual é o objetivo da memória RAM de um computador?\n");
+            System.out.println("\n9) Qual é o objetivo da memória RAM de um computador?");
             System.out.println("a) " + alternativasp9.get(0));
             System.out.println("b) " + alternativasp9.get(1));
             System.out.println("c) " + alternativasp9.get(2));
@@ -289,6 +300,7 @@ public class TheAlgorithmsPrisoner {
                     System.out.println("Resposta inválida! Tente Novamente!");
             }
         } while (!acertoup9 && contp9 <=2);
+        System.out.println();
         System.out.println("*--------------***--------------*");
         System.out.println("Sua pontuação é de: "+pontuacao+" pontos");
         System.out.println("*--------------***--------------*");
@@ -302,7 +314,7 @@ public class TheAlgorithmsPrisoner {
         alternativasp8.add("8 GB");//resposta correta
         do {
             Collections.shuffle(alternativasp8);
-            System.out.println("\n8) Em um computador existem vários tipos de memória. Atualmente, uma típica memória RAM possui a capacidade de\n");
+            System.out.println("\n8) Em um computador existem vários tipos de memória. Atualmente, uma típica memória RAM possui a capacidade de");
             System.out.println("a) " + alternativasp8.get(0));
             System.out.println("b) " + alternativasp8.get(1));
             System.out.println("c) " + alternativasp8.get(2));
@@ -370,7 +382,7 @@ public class TheAlgorithmsPrisoner {
         alternativasp7.add("Errado");
         do {
             Collections.shuffle(alternativasp7);
-            System.out.println("\n7) Quando o usuário executa um programa no computador, cabe ao processador buscar as instruções necessárias na memória RAM desse computador.\n");
+            System.out.println("\n7) Quando o usuário executa um programa no computador, cabe ao processador buscar as instruções necessárias na memória RAM desse computador.");
             System.out.println("a) " + alternativasp7.get(0)); //resposta correta
             System.out.println("b) " + alternativasp7.get(1));
             System.out.print("Escolha uma alternativa: ");
@@ -410,6 +422,11 @@ public class TheAlgorithmsPrisoner {
         System.out.println("*--------------***--------------*");
     }
     public static void faseTres(){
+        System.out.println();
+        System.out.println("*--------------***--------------*");
+        System.out.println("            FASE III             ");
+        System.out.println("*--------------***--------------*");
+        System.out.println();
         System.out.println("Seguindo mais adiante em meio aquele caos, ele se depara com o vírus Poweliks, que está danificando a memória RAM, fazendo que o antivírus ataque o João achando que ele é um vírus\n"+
                 "\tComputador: Vamos João, você já está passando da metade do jogo! não deixe um simples virus te derrotar!");
         questoesFaseTres();
@@ -418,7 +435,10 @@ public class TheAlgorithmsPrisoner {
         System.out.println("ADD QUESTOES FASE II");
     }
     public static void faseDois(){
-        System.out.println("ADD FASE II");
+        System.out.println();
+        System.out.println("*--------------***--------------*");
+        System.out.println("            FASE II              ");
+        System.out.println("*--------------***--------------*");
         questoesFaseDois();
     }
     public static void questoesFaseUm() {
@@ -601,7 +621,7 @@ public class TheAlgorithmsPrisoner {
             int contp3 = 0;
             List alternativasp3 = new ArrayList();
             alternativasp3.add("Fluxograma, diagrama e decomposição");
-            alternativasp3.add("Descrição narrativa,  fluxograma e o pseudocódigo");
+            alternativasp3.add("Descrição narrativa,  fluxograma e o pseudocódigo"); //resposta correta
             alternativasp3.add("Descrição interpretativa,  fluxograma e o pseudocódigo");
             alternativasp3.add("Decomposição, descrição narrativa e diagrama");
             alternativasp3.add("Nenhuma alternativa está correta");
@@ -686,6 +706,11 @@ public class TheAlgorithmsPrisoner {
             System.out.println("*--------------***--------------*");
     }
     public static void faseUm() {
+        System.out.println();
+        System.out.println("*--------------***--------------*");
+        System.out.println("              FASE I             ");
+        System.out.println("*--------------***--------------*");
+        System.out.println();
         System.out.println("\tComputador: O Seu primeiro oponente é o vírus que está no HD, o Ransomware - disse uma voz robótica que parecia quase que um grunhido, uma voz robótica que ele jurava ser fruto da sua imaginação.\n" +
                 "João: O que? Ransomware? Oponente? O que está acontecendo? Estou ficando maluco, não é possível! - esmoreceu João.\n" +
                 " \tComputador: Que falta de educação a minha, esqueci de me apresentar! Serei seu guia durante essa jornada, pode me chamar de mestre se quiser, sempre me sinto melhor quando reconhecem minha genialidade!\n" +
