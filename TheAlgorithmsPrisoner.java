@@ -13,259 +13,258 @@ public class TheAlgorithmsPrisoner {
         System.out.println("Este jogo foi produzido pelos Desenvolvedores: \n Diego Pedro\n Felipe Manzano\n Sabrina Oliveira\n Talita Brandão\n Yasmin Rodrigues");
     }
     public static void questoesFaseCinco(){
-        System.out.println("ADD QUESTOES FASE V");
-           Scanner tc = new Scanner(System.in);
-           boolean acertou13 = false;
-           int pontuacao = 0;
-           int cont13 = 0;
-           List alternativas13 = new ArrayList();
-           alternativas13.add("[0]");
-           alternativas13.add("[1]");//resposta correta
-           alternativas13.add("[2]");
-           alternativas13.add("[3]");
-           alternativas13.add("[4]");
+        Scanner tc = new Scanner(System.in);
+        boolean acertou13 = false;
+        int pontuacao = 0;
+        int cont13 = 0;
+        List alternativas13 = new ArrayList();
+        alternativas13.add("[0]");
+        alternativas13.add("[1]");//resposta correta
+        alternativas13.add("[2]");
+        alternativas13.add("[3]");
+        alternativas13.add("[4]");
 
-      do {
-        
-      //Pergunta XIII
-        System.out.println("Matrizes são usadas para armazenar vários valores em uma única variável, sabendo disso complete corretamente os códigos a seguir:");
+        do {
 
-        Collections.shuffle(alternativas13);
-      System.out.println("13) Em qual componente estamos no jogo?\nString[] TheAlgorithmsPrisioner = {Processador, Placa-Mãe, GPU, CPU}\nSystem.out.println(TheAlgorithmsPrisioner___)");
-    System.out.println("a) " + alternativas13.get(0));
-    System.out.println("b) " + alternativas13.get(1));
-    System.out.println("c) " + alternativas13.get(2));
-    System.out.println("d) " + alternativas13.get(3));
-    System.out.println("e) " + alternativas13.get(4));
-    String r13 = tc.next();
-      
-    switch(r13) {
-      case "a":
-      case "A":
-        if (alternativas13.get(0).equals("[1]")) {
-        System.out.println("Parabéns, você acertou!");
-        acertou13 = true;
-        pontuacao++;
-    } else {
-          System.out.println("Que pena, você errou!");
-          cont13++; }
-        break;
-       case "b":
-       case "B":
-        if (alternativas13.get(1).equals("[1]")) {
-        System.out.println("Parabéns, você acertou!");
-        acertou13 = true;
-        pontuacao++;
-    } else {
-          System.out.println("Que pena, você errou!");
-          cont13++;}
-        break;
-       case "c":
-       case "C":
-        if (alternativas13.get(2).equals("[1]")) {
-        System.out.println("Parabéns, você acertou!");
-        acertou13 = true;
-        pontuacao++;
-    } else {
-          System.out.println("Que pena, você errou!");
-          cont13++; }
+            //Pergunta XIII
+            System.out.println("Matrizes são usadas para armazenar vários valores em uma única variável, sabendo disso complete corretamente os códigos a seguir:");
 
-      break;
-       case "d":
-       case "D":
-        if (alternativas13.get(3).equals("[1]")) {
-        System.out.println("Parabéns, você acertou!");
-        acertou13 = true;
-        pontuacao++;
-    } else {
-          System.out.println("Que pena, você errou!");
-          cont13++; }
+            Collections.shuffle(alternativas13);
+            System.out.println("13) Em qual componente estamos no jogo?\nString[] TheAlgorithmsPrisioner = {Processador, Placa-Mãe, GPU, CPU}\nSystem.out.println(TheAlgorithmsPrisioner___)");
+            System.out.println("a) " + alternativas13.get(0));
+            System.out.println("b) " + alternativas13.get(1));
+            System.out.println("c) " + alternativas13.get(2));
+            System.out.println("d) " + alternativas13.get(3));
+            System.out.println("e) " + alternativas13.get(4));
+            String r13 = tc.next();
 
-       break;
-       case "e":
-       case "E":
-        if (alternativas13.get(4).equals("[1]")) {
-        System.out.println("Parabéns, você acertou!");
-        acertou13 = true;
-        pontuacao++;
-    } else {
-          System.out.println("Que pena, você errou!");
-          cont13++; }
-      break;
-        
-      default:
-        System.out.println("Resposta inválida! Tente Novamente!");
-  } 
-    } while (!acertou13 && cont13 <=2);
-      System.out.println("*--------------***--------------*");
+            switch(r13) {
+                case "a":
+                case "A":
+                    if (alternativas13.get(0).equals("[1]")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertou13 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont13++; }
+                    break;
+                case "b":
+                case "B":
+                    if (alternativas13.get(1).equals("[1]")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertou13 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont13++;}
+                    break;
+                case "c":
+                case "C":
+                    if (alternativas13.get(2).equals("[1]")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertou13 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont13++; }
+
+                    break;
+                case "d":
+                case "D":
+                    if (alternativas13.get(3).equals("[1]")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertou13 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont13++; }
+
+                    break;
+                case "e":
+                case "E":
+                    if (alternativas13.get(4).equals("[1]")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertou13 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont13++; }
+                    break;
+
+                default:
+                    System.out.println("Resposta inválida! Tente Novamente!");
+            }
+        } while (!acertou13 && cont13 <=2);
+        System.out.println("*--------------***--------------*");
         System.out.println("Sua pontuação é de: "+pontuacao+" pontos");
         System.out.println("*--------------***--------------*\n");
-      
-      //Pergunta XIV
-      Scanner tc2 = new Scanner(System.in);
-      boolean acertou14 = false;
-      int cont14 = 0;
-      List alternativas14 = new ArrayList();
-      alternativas14.add("String");
-      alternativas14.add("Double");
-      alternativas14.add("Int");//resposta correta
-      alternativas14.add("Float");
 
-      do {
-        Collections.shuffle(alternativas14);
-        System.out.println("14) Qual variável seria mais adequada nesse caso\n___ TheAlgorithmsPrisioner = {1, 2, 3, 4}\nSystem.out.println(TheAlgorithmsPrisioner[3]);\n"); 
-      System.out.println("a) " + alternativas14.get(0));
-      System.out.println("b) " + alternativas14.get(1));
-      System.out.println("c) " + alternativas14.get(2));
-      System.out.println("d) " + alternativas14.get(3));
-      System.out.print("Escolha uma alternativa: ");
-      String r14 = tc2.next();
+        //Pergunta XIV
+        Scanner tc2 = new Scanner(System.in);
+        boolean acertou14 = false;
+        int cont14 = 0;
+        List alternativas14 = new ArrayList();
+        alternativas14.add("String");
+        alternativas14.add("Double");
+        alternativas14.add("Int");//resposta correta
+        alternativas14.add("Float");
 
-      switch (r14) {
-        case "a":
-        case "A":
-          if (alternativas14.get(0).equals("Int")) {
-            System.out.println("Resposta Correta!");
-            acertou14 = true;
-            pontuacao++;
-          } else {
-            System.out.println("Resposta incorreta");
-            cont14++;
-          }
-          break;
-        case "B":
-        case "b":
-          if (alternativas14.get(1).equals("Int")) {
-            System.out.println("Resposta Correta!");
-            acertou14 = true;
-            pontuacao++;
-          } else {
-            System.out.println("Resposta incorreta");
-            cont14++;
-          }
-          break;
-        case "c":
-        case "C":
-          if (alternativas14.get(2).equals("Int")) {
-            System.out.println("Resposta Correta!");
-            acertou14 = true;
-            pontuacao++;
-          } else {
-            System.out.println("Resposta incorreta");
-            cont14++;
-          }
-          break;
-          case "d":
-          case "D":
-          if (alternativas14.get(3).equals("Int")) {
-            System.out.println("Resposta Correta!");
-            acertou14 = true;
-            pontuacao++;
-          } else {
-            System.out.println("Resposta incorreta");
-            cont14++;
-          }
-          break;
-        default: 
-          System.out.println("Escolha inválida!");
-}
-     } while (!acertou14 && cont14 <=2);
-      System.out.println("*--------------***--------------*");
+        do {
+            Collections.shuffle(alternativas14);
+            System.out.println("14) Qual variável seria mais adequada nesse caso\n___ TheAlgorithmsPrisioner = {1, 2, 3, 4}\nSystem.out.println(TheAlgorithmsPrisioner[3]);\n");
+            System.out.println("a) " + alternativas14.get(0));
+            System.out.println("b) " + alternativas14.get(1));
+            System.out.println("c) " + alternativas14.get(2));
+            System.out.println("d) " + alternativas14.get(3));
+            System.out.print("Escolha uma alternativa: ");
+            String r14 = tc2.next();
+
+            switch (r14) {
+                case "a":
+                case "A":
+                    if (alternativas14.get(0).equals("Int")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertou14 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont14++;
+                    }
+                    break;
+                case "B":
+                case "b":
+                    if (alternativas14.get(1).equals("Int")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertou14 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont14++;
+                    }
+                    break;
+                case "c":
+                case "C":
+                    if (alternativas14.get(2).equals("Int")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertou14 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont14++;
+                    }
+                    break;
+                case "d":
+                case "D":
+                    if (alternativas14.get(3).equals("Int")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertou14 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont14++;
+                    }
+                    break;
+                default:
+                    System.out.println("Resposta inválida! Tente Novamente!");
+            }
+        } while (!acertou14 && cont14 <=2);
+        System.out.println("*--------------***--------------*");
         System.out.println("Sua pontuação é de: "+pontuacao+" pontos");
         System.out.println("*--------------***--------------*\n");
-      
-      //PERGUNTA XV
-     Scanner tc3 = new Scanner(System.in);
-     boolean acertou15 = false;
-     int cont15 = 0;
-     List alternativas15 = new ArrayList();
-      
-     alternativas15.add("String[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[2]);\nPlaca Mãe\n");
-       alternativas15.add("Int[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[2]);\nMonitor\n");
-       alternativas15.add("String[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[3]);\nGPU\n");
-       alternativas15.add("String[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[2]);\nMonitor\n");//resposta correta
-       alternativas15.add("Nenhuma alternativa está correta");
 
-      do {
-        Collections.shuffle(alternativas15);
-        System.out.println("Parabéns, você chegou ao último desafio! Agora reponda qual código é o correto, estamos quase lá! ");
-        System.out.println("a) " + alternativas15.get(0));
-        System.out.println("b) " + alternativas15.get(1));
-        System.out.println("c) " + alternativas15.get(2));
-        System.out.println("d) " + alternativas15.get(3));
-        System.out.println("e) " + alternativas15.get(4));
-        System.out.print("Escolha uma alternativa: ");
-        String r15 = tc3.next();
-        
-        switch (r15) {
-          case "a":
-          case "A":
-            if (alternativas15.get(0).equals("String[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[2]);\nMonitor\n")) {
-              System.out.println("Você venceu!!!\nJoão derrotou o quinto vírus, aparentemente tudo foi resolvido, ele mal podia esperar para voltar para casa, sentia falta até da rotina cansativa e das cobranças da transição para vida adulta. Foi quando ele sentiu uma onda de frio invadir seu quarto e escutou um som ao fundo:\n Espera, eu conheço esse som!\n João quase não podia acreditar no que estava vendo, o cômodo escuro deu lugar as paredes brancas do seu quarto e a escuridão deu lugar às luzes coloridas advindas do seu gabinete, ele não podia acreditar, era seu quarto e aquele barulho, era seu celular tocando, tudo não passara de um sonho, as horas que até então pareciam infinitas, tinham dado lugar a um clima ameno e ao olhar para o relógio, João se assustou:\nSão 10:30!");
-            acertou15 = true;
-            pontuacao++;
-            } else {
-              System.out.println("Resposta incorreta!");
-              cont15++;
-            }
-            break;
-          case "b":
-          case "B":
-            if (alternativas15.get(1).equals("String[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[2]);/nMonitor/n")) {
-              System.out.println("Você venceu!!!\nJoão derrotou o quinto vírus, aparentemente tudo foi resolvido, ele mal podia esperar para voltar para casa, sentia falta até da rotina cansativa e das cobranças da transição para vida adulta. Foi quando ele sentiu uma onda de frio invadir seu quarto e escutou um som ao fundo:\n Espera, eu conheço esse som!\n João quase não podia acreditar no que estava vendo, o cômodo escuro deu lugar as paredes brancas do seu quarto e a escuridão deu lugar às luzes coloridas advindas do seu gabinete, ele não podia acreditar, era seu quarto e aquele barulho, era seu celular tocando, tudo não passara de um sonho, as horas que até então pareciam infinitas, tinham dado lugar a um clima ameno e ao olhar para o relógio, João se assustou:\nSão 10:30!");
-            acertou15 = true;
-            pontuacao++;
-            } else {
-              System.out.println("Resposta incorreta!");
-              cont15++;
-            } 
-            
-          break;
-          case "c":
-          case "C":
-            if (alternativas15.get(2).equals("String[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[2]);\nMonitor\n")) {
-              System.out.println("Você venceu!!!\nJoão derrotou o quinto vírus, aparentemente tudo foi resolvido, ele mal podia esperar para voltar para casa, sentia falta até da rotina cansativa e das cobranças da transição para vida adulta. Foi quando ele sentiu uma onda de frio invadir seu quarto e escutou um som ao fundo:\n Espera, eu conheço esse som!\n João quase não podia acreditar no que estava vendo, o cômodo escuro deu lugar as paredes brancas do seu quarto e a escuridão deu lugar às luzes coloridas advindas do seu gabinete, ele não podia acreditar, era seu quarto e aquele barulho, era seu celular tocando, tudo não passara de um sonho, as horas que até então pareciam infinitas, tinham dado lugar a um clima ameno e ao olhar para o relógio, João se assustou:\nSão 10:30!");
-            acertou15 = true;
-            pontuacao++;
-            } else {
-              System.out.println("Resposta incorreta!");
-              cont15++;
-            }
-          break;
-          case "d":
-          case "D":
-            if (alternativas15.get(3).equals("String[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[2]);\nMonitor\n")) {
-              System.out.println("Você venceu!!!\nJoão derrotou o quinto vírus, aparentemente tudo foi resolvido, ele mal podia esperar para voltar para casa, sentia falta até da rotina cansativa e das cobranças da transição para vida adulta. Foi quando ele sentiu uma onda de frio invadir seu quarto e escutou um som ao fundo:\n Espera, eu conheço esse som!\n João quase não podia acreditar no que estava vendo, o cômodo escuro deu lugar as paredes brancas do seu quarto e a escuridão deu lugar às luzes coloridas advindas do seu gabinete, ele não podia acreditar, era seu quarto e aquele barulho, era seu celular tocando, tudo não passara de um sonho, as horas que até então pareciam infinitas, tinham dado lugar a um clima ameno e ao olhar para o relógio, João se assustou:\nSão 10:30!");
-            acertou15 = true;
-            pontuacao++;
-            } else {
-              System.out.println("Resposta incorreta!");
-              cont15++;
-            }
-             break;
-          case "e":
-          case "E":
-            if (alternativas15.get(4).equals("String[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[2]);\nMonitor\n")) {
-              System.out.println("Você venceu!!!\nJoão derrotou o quinto vírus, aparentemente tudo foi resolvido, ele mal podia esperar para voltar para casa, sentia falta até da rotina cansativa e das cobranças da transição para vida adulta. Foi quando ele sentiu uma onda de frio invadir seu quarto e escutou um som ao fundo:\n Espera, eu conheço esse som!\n João quase não podia acreditar no que estava vendo, o cômodo escuro deu lugar as paredes brancas do seu quarto e a escuridão deu lugar às luzes coloridas advindas do seu gabinete, ele não podia acreditar, era seu quarto e aquele barulho, era seu celular tocando, tudo não passara de um sonho, as horas que até então pareciam infinitas, tinham dado lugar a um clima ameno e ao olhar para o relógio, João se assustou:\nSão 10:30!");
-            acertou15 = true;
-            pontuacao++;
-            } else {
-              System.out.println("Resposta incorreta!");
-              cont15++;
-            }
-            break;
-          default:
-            System.out.println("Escolha inválida!");
-        }
+        //PERGUNTA XV
+        Scanner tc3 = new Scanner(System.in);
+        boolean acertou15 = false;
+        int cont15 = 0;
+        List alternativas15 = new ArrayList();
 
-        
-      } while (!acertou15 && cont15<=2);
-      System.out.println("*--------------***--------------*");
-      System.out.println("Sua pontuação total foi de: "+ pontuacao+" pontos");
-      System.out.println("*--------------***--------------*");
+        alternativas15.add("String[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[2]);\nPlaca Mãe\n");
+        alternativas15.add("Int[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[2]);\nMonitor\n");
+        alternativas15.add("String[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[3]);\nGPU\n");
+        alternativas15.add("String[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[2]);\nMonitor\n");//resposta correta
+        alternativas15.add("Nenhuma alternativa está correta");
 
-    
-        
+        do {
+            Collections.shuffle(alternativas15);
+            System.out.println("Parabéns, você chegou ao último desafio! Agora reponda qual código é o correto, estamos quase lá! ");
+            System.out.println("a) " + alternativas15.get(0));
+            System.out.println("b) " + alternativas15.get(1));
+            System.out.println("c) " + alternativas15.get(2));
+            System.out.println("d) " + alternativas15.get(3));
+            System.out.println("e) " + alternativas15.get(4));
+            System.out.print("Escolha uma alternativa: ");
+            String r15 = tc3.next();
+
+            switch (r15) {
+                case "a":
+                case "A":
+                    if (alternativas15.get(0).equals("String[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[2]);\nMonitor\n")) {
+                        System.out.println("Você venceu!!!\nJoão derrotou o quinto vírus, aparentemente tudo foi resolvido, ele mal podia esperar para voltar para casa, sentia falta até da rotina cansativa e das cobranças da transição para vida adulta. Foi quando ele sentiu uma onda de frio invadir seu quarto e escutou um som ao fundo:\n Espera, eu conheço esse som!\n João quase não podia acreditar no que estava vendo, o cômodo escuro deu lugar as paredes brancas do seu quarto e a escuridão deu lugar às luzes coloridas advindas do seu gabinete, ele não podia acreditar, era seu quarto e aquele barulho, era seu celular tocando, tudo não passara de um sonho, as horas que até então pareciam infinitas, tinham dado lugar a um clima ameno e ao olhar para o relógio, João se assustou:\nSão 10:30!");
+                        acertou15 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont15++;
+                    }
+                    break;
+                case "b":
+                case "B":
+                    if (alternativas15.get(1).equals("String[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[2]);/nMonitor/n")) {
+                        System.out.println("Você venceu!!!\nJoão derrotou o quinto vírus, aparentemente tudo foi resolvido, ele mal podia esperar para voltar para casa, sentia falta até da rotina cansativa e das cobranças da transição para vida adulta. Foi quando ele sentiu uma onda de frio invadir seu quarto e escutou um som ao fundo:\n Espera, eu conheço esse som!\n João quase não podia acreditar no que estava vendo, o cômodo escuro deu lugar as paredes brancas do seu quarto e a escuridão deu lugar às luzes coloridas advindas do seu gabinete, ele não podia acreditar, era seu quarto e aquele barulho, era seu celular tocando, tudo não passara de um sonho, as horas que até então pareciam infinitas, tinham dado lugar a um clima ameno e ao olhar para o relógio, João se assustou:\nSão 10:30!");
+                        acertou15 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont15++;
+                    }
+
+                    break;
+                case "c":
+                case "C":
+                    if (alternativas15.get(2).equals("String[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[2]);\nMonitor\n")) {
+                        System.out.println("Você venceu!!!\nJoão derrotou o quinto vírus, aparentemente tudo foi resolvido, ele mal podia esperar para voltar para casa, sentia falta até da rotina cansativa e das cobranças da transição para vida adulta. Foi quando ele sentiu uma onda de frio invadir seu quarto e escutou um som ao fundo:\n Espera, eu conheço esse som!\n João quase não podia acreditar no que estava vendo, o cômodo escuro deu lugar as paredes brancas do seu quarto e a escuridão deu lugar às luzes coloridas advindas do seu gabinete, ele não podia acreditar, era seu quarto e aquele barulho, era seu celular tocando, tudo não passara de um sonho, as horas que até então pareciam infinitas, tinham dado lugar a um clima ameno e ao olhar para o relógio, João se assustou:\nSão 10:30!");
+                        acertou15 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont15++;
+                    }
+                    break;
+                case "d":
+                case "D":
+                    if (alternativas15.get(3).equals("String[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[2]);\nMonitor\n")) {
+                        System.out.println("Você venceu!!!\nJoão derrotou o quinto vírus, aparentemente tudo foi resolvido, ele mal podia esperar para voltar para casa, sentia falta até da rotina cansativa e das cobranças da transição para vida adulta. Foi quando ele sentiu uma onda de frio invadir seu quarto e escutou um som ao fundo:\n Espera, eu conheço esse som!\n João quase não podia acreditar no que estava vendo, o cômodo escuro deu lugar as paredes brancas do seu quarto e a escuridão deu lugar às luzes coloridas advindas do seu gabinete, ele não podia acreditar, era seu quarto e aquele barulho, era seu celular tocando, tudo não passara de um sonho, as horas que até então pareciam infinitas, tinham dado lugar a um clima ameno e ao olhar para o relógio, João se assustou:\nSão 10:30!");
+                        acertou15 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont15++;
+                    }
+                    break;
+                case "e":
+                case "E":
+                    if (alternativas15.get(4).equals("String[] TheAlgorithmsPrisioner = {CPU, Placa-Mãe, GPU, Processador};\nTheAlgorithmsPrisioner[2] = 'Monitor';\nSystem.out.println(TheAlgorithmsPrisioner[2]);\nMonitor\n")) {
+                        System.out.println("Você venceu!!!\nJoão derrotou o quinto vírus, aparentemente tudo foi resolvido, ele mal podia esperar para voltar para casa, sentia falta até da rotina cansativa e das cobranças da transição para vida adulta. Foi quando ele sentiu uma onda de frio invadir seu quarto e escutou um som ao fundo:\n Espera, eu conheço esse som!\n João quase não podia acreditar no que estava vendo, o cômodo escuro deu lugar as paredes brancas do seu quarto e a escuridão deu lugar às luzes coloridas advindas do seu gabinete, ele não podia acreditar, era seu quarto e aquele barulho, era seu celular tocando, tudo não passara de um sonho, as horas que até então pareciam infinitas, tinham dado lugar a um clima ameno e ao olhar para o relógio, João se assustou:\nSão 10:30!");
+                        acertou15 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont15++;
+                    }
+                    break;
+                default:
+                    System.out.println("Resposta inválida! Tente Novamente!");
+            }
+
+
+        } while (!acertou15 && cont15<=2);
+        System.out.println("*--------------***--------------*");
+        System.out.println("Sua pontuação total foi de: "+ pontuacao+" pontos");
+        System.out.println("*--------------***--------------*");
+
+
+
     }
     public  static void faseCinco(){
         System.out.println();
@@ -275,7 +274,7 @@ public class TheAlgorithmsPrisoner {
         System.out.println();
         System.out.println("Computador: Essa é a fase final, nela você vai aprender sobre a placa mãe e o vírus  Cosmicstrand, nessa fase você não vai conseguir se comunicar com seus componentes, portanto, não vai conseguir ajudar e nem pedir ajuda.\n");
         questoesFaseCinco();
-     
+
     }
     public static void questoesFaseQuatro(){
         //Pergunta X
@@ -478,9 +477,9 @@ public class TheAlgorithmsPrisoner {
         System.out.println("*--------------***--------------*");
         System.out.println();
         System.out.println("João: Está muito quente aqui dentro!\n" +
-                "\tComputador: Nessa fase, você vai lidar com o problema de superaquecimento do processador e vai ter que infrentar o vírus meltdown\n ele estraga a barreira de defesa dos chips,tornando eles extremamente vulneráveis\n"+
+                "Computador: Nessa fase, você vai lidar com o problema de superaquecimento do processador e vai ter que infrentar o vírus meltdown\n ele estraga a barreira de defesa dos chips,tornando eles extremamente vulneráveis\n"+
                 "João: Eu preciso do meu computador de volta!, não vou deixar esse vírus estragar o meu trabalho, vai ser fácil!"+
-                "\tComputador: Você vai precisar de muito conhecimento para derrotar esse poderoso vírus, não se de por vencido \n vai precisar demonstrar todo o seu conhecimento computacional para vencê-lo, lhe desejo sorte....\ne se falhar, todos os vírus dominarão o seu computador!");
+                "Computador: Você vai precisar de muito conhecimento para derrotar esse poderoso vírus, não se de por vencido \n vai precisar demonstrar todo o seu conhecimento computacional para vencê-lo, lhe desejo sorte....\ne se falhar, todos os vírus dominarão o seu computador!");
         questoesFaseQuatro();
     }
     public static void questoesFaseTres(){
@@ -497,7 +496,7 @@ public class TheAlgorithmsPrisoner {
         do {
 
             Collections.shuffle(alternativasp9);
-            System.out.println("\n9) Qual é o objetivo da memória RAM de um computador?");
+            System.out.println("\n7) Qual é o objetivo da memória RAM de um computador?");
             System.out.println("a) " + alternativasp9.get(0));
             System.out.println("b) " + alternativasp9.get(1));
             System.out.println("c) " + alternativasp9.get(2));
@@ -636,7 +635,7 @@ public class TheAlgorithmsPrisoner {
         alternativasp7.add("Errado");
         do {
             Collections.shuffle(alternativasp7);
-            System.out.println("\n7) Quando o usuário executa um programa no computador, cabe ao processador buscar as instruções necessárias na memória RAM desse computador.");
+            System.out.println("\n9) Quando o usuário executa um programa no computador, cabe ao processador buscar as instruções necessárias na memória RAM desse computador.");
             System.out.println("a) " + alternativasp7.get(0)); //resposta correta
             System.out.println("b) " + alternativasp7.get(1));
             System.out.print("Escolha uma alternativa: ");
@@ -681,12 +680,11 @@ public class TheAlgorithmsPrisoner {
         System.out.println("            FASE III             ");
         System.out.println("*--------------***--------------*");
         System.out.println();
-        System.out.println("Seguindo mais adiante em meio aquele caos, ele se depara com o vírus Poweliks, que está danificando a memória RAM, fazendo que o antivírus ataque o João achando que ele é um vírus\n"+
-                "\tComputador: Vamos João, você já está passando da metade do jogo! não deixe um simples virus te derrotar!");
+        System.out.println("Seguindo mais adiante em meio aquele caos, ele se depara com o vírus Poweliks, que está danificando a memória RAM, fazendo que o antivírus ataque o João achando que ele é um vírus\n Computador: Vamos João, você já está passando da metade do jogo! não deixe um simples virus te derrotar!");
         questoesFaseTres();
     }
     public static void questoesFaseDois(){
-        System.out.println("ADD QUESTOES FASE II");
+
     }
     public static void faseDois(){
         System.out.println();
@@ -697,93 +695,99 @@ public class TheAlgorithmsPrisoner {
     }
     public static void questoesFaseUm() {
         //Pergunta I
-            Scanner input = new Scanner(System.in);
-            boolean acertou = false;
-            int cont = 0;
-            int pontuacao = 0;    //iniciando a váriavel de pontuação como global
-            List alternativas = new ArrayList();
-            alternativas.add("Apenas I"); // resposta correta
-            alternativas.add("I e II");
-            alternativas.add("II e III");
-            alternativas.add("Apenas II");
-            alternativas.add("Todas as afirmações estão corretas");
-            do {
-                Collections.shuffle(alternativas);
-                System.out.println("1) Nos últimos anos, a tecnologia passou por um processo de constante evolução e muito se tem dito sobre como a tecnologia como um todo transformou o modo de vida na sociedade.\nTendo em vista, especificamente, o conceito de algoritmo, especifique a definição que melhor se aplica ao conceito:");
-                System.out.println("\nI) É uma sequência lógica, finita e bem definida de instruções que devem ser seguidas para resolver um problema ou executar uma tarefa\n" +
-                        "II)É uma sequência infinita de instruções que devem ser seguidas para criar um problema ou executar uma tarefa\n" +
-                        "III)É uma sequência infinita de instruções que devem ser seguidas de maneira aleatória \n");
-                System.out.println("a) " + alternativas.get(0));
-                System.out.println("b) " + alternativas.get(1));
-                System.out.println("c) " + alternativas.get(2));
-                System.out.println("d) " + alternativas.get(3));
-                System.out.println("e) " + alternativas.get(4));
-                System.out.print("Escolha uma alternativa: ");
-                String resposta = input.next();
-                switch (resposta) {
-                    case "a":
-                    case "A":
-                        if (alternativas.get(0).equals("Apenas I")) {
-                            System.out.println("Resposta correta!");
-                            acertou = true;
-                            pontuacao++;
-                        } else {
-                            System.out.println("Resposta incorreta!");
-                            cont ++;
-                        }
-                        break;
-                    case "b":
-                    case "B":
-                        if (alternativas.get(1).equals("Apenas I")) {
-                            System.out.println("Resposta correta!");
-                            acertou = true;
-                            pontuacao++;
-                        } else {
-                            System.out.println("Resposta incorreta!");
-                            cont ++;
-                        }
-                        break;
-                    case "c":
-                    case "C":
-                        if (alternativas.get(2).equals("Apenas I")) {
-                            System.out.println("Resposta correta!");
-                            acertou = true;
-                            pontuacao++;
-                        } else {
-                            System.out.println("Resposta incorreta!");
-                            cont ++;
-                        }
-                        break;
-                    case "d":
-                    case "D":
-                        if (alternativas.get(3).equals("Apenas I")) {
-                            System.out.println("Resposta correta!");
-                            acertou = true;
-                            pontuacao++;
-                        } else {
-                            System.out.println("Resposta incorreta!");
-                            cont ++;
-                        }
-                        break;
-                    case "e":
-                    case "E":
-                        if (alternativas.get(4).equals("Apenas I")) {
-                            System.out.println("Resposta correta!");
-                            acertou = true;
-                            pontuacao++;
-                        } else {
-                            System.out.println("Resposta incorreta!");
-                            cont ++;
-                        }
-                        break;
-                    default:
-                        System.out.println("Escolha inválida!");
-                }
-            } while (!acertou && cont <=2);
-            System.out.println("*--------------***--------------*");
-            System.out.println("Sua pontuação é de: "+ pontuacao+" ponto");
-            System.out.println("*--------------***--------------*");
-        //Pergunta II
+        //REFERENCIA CLASSE SCANNER
+        Scanner input = new Scanner(System.in);
+        //DECLARAÇÃO DE VAR
+        boolean acertou = false;
+        int cont = 0;
+        int pontuacao = 0;    //iniciando a váriavel de pontuação como global
+        List alternativas = new ArrayList();
+        alternativas.add("Apenas I"); // resposta correta
+        alternativas.add("I e II");
+        alternativas.add("II e III");
+        alternativas.add("Apenas II");
+        alternativas.add("Todas as afirmações estão corretas");
+        //LAÇO DE REPETIÇÃO VAI RODAR ENQUANTO FOR < QUE 3 (CHANCES) E ENQUANTO A ALTERNATIVA ESTIVER ERRADA
+        do {
+            //SHUFFLE  >> EMBARALHAR AS ALTERNATIVAS
+            Collections.shuffle(alternativas);
+            System.out.println("1) Nos últimos anos, a tecnologia passou por um processo de constante evolução e muito se tem dito sobre como a tecnologia como um todo transformou o modo de vida na sociedade.\nTendo em vista, especificamente, o conceito de algoritmo, especifique a definição que melhor se aplica ao conceito:");
+            System.out.println("\nI) É uma sequência lógica, finita e bem definida de instruções que devem ser seguidas para resolver um problema ou executar uma tarefa\n" +
+                    "II)É uma sequência infinita de instruções que devem ser seguidas para criar um problema ou executar uma tarefa\n" +
+                    "III)É uma sequência infinita de instruções que devem ser seguidas de maneira aleatória \n");
+            System.out.println("a) " + alternativas.get(0));
+            System.out.println("b) " + alternativas.get(1));
+            System.out.println("c) " + alternativas.get(2));
+            System.out.println("d) " + alternativas.get(3));
+            System.out.println("e) " + alternativas.get(4));
+            System.out.print("Escolha uma alternativa: ");
+            String resposta = input.next();
+            //SWITCH PARA AS ALTERNATIVAS
+            switch (resposta) {
+                case "a":
+                case "A":
+                    if (alternativas.get(0).equals("Apenas I")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertou = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont ++;
+                    }
+                    break;
+                case "b":
+                case "B":
+                    if (alternativas.get(1).equals("Apenas I")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertou = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont ++;
+                    }
+                    break;
+                case "c":
+                case "C":
+                    if (alternativas.get(2).equals("Apenas I")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertou = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont ++;
+                    }
+                    break;
+                case "d":
+                case "D":
+                    if (alternativas.get(3).equals("Apenas I")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertou = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont ++;
+                    }
+                    break;
+                case "e":
+                case "E":
+                    if (alternativas.get(4).equals("Apenas I")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertou = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        cont ++;
+                    }
+                    break;
+                default:
+                    System.out.println("Resposta inválida! Tente Novamente!");
+            }
+            //ENQUANTO
+        } while (!acertou && cont <=2);
+        System.out.println("*--------------***--------------*");
+        System.out.println("Sua pontuação é de: "+ pontuacao+" ponto");
+        System.out.println("*--------------***--------------*");
+        //Pergunta II : SEGUINDO A MESMA LÓGICA DA PERGUTA I
         Scanner inputp2 = new Scanner(System.in);
         boolean acertoup2 = false;
         int contp2 = 0;;
@@ -810,154 +814,154 @@ public class TheAlgorithmsPrisoner {
                 case "a":
                 case "A":
                     if (alternativasp2.get(0).equals("I,II e III")) {
-                        System.out.println("Resposta correta!");
+                        System.out.println("Parabéns, você acertou!");
                         acertoup2 = true;
                         pontuacao++;
                     } else {
-                        System.out.println("Resposta incorreta!");
+                        System.out.println("Que pena, você errou!");
                         contp2++;
                     }
                     break;
                 case "b":
                 case "B":
                     if (alternativasp2.get(1).equals("I,II e III")) {
-                        System.out.println("Resposta correta!");
+                        System.out.println("Parabéns, você acertou!");
                         acertoup2 = true;
                         pontuacao++;
                     } else {
-                        System.out.println("Resposta incorreta!");
+                        System.out.println("Que pena, você errou!");
                         contp2++;
                     }
                     break;
                 case "c":
                 case "C":
                     if (alternativasp2.get(2).equals("I,II e III")) {
-                        System.out.println("Resposta correta!");
+                        System.out.println("Parabéns, você acertou!");
                         acertoup2 = true;
                         pontuacao++;
                     } else {
-                        System.out.println("Resposta incorreta!");
+                        System.out.println("Que pena, você errou!");
                         contp2++;
                     }
                     break;
                 case "d":
                 case "D":
                     if (alternativasp2.get(3).equals("I,II e III")) {
-                        System.out.println("Resposta correta!");
+                        System.out.println("Parabéns, você acertou!");
                         acertoup2 = true;
                         pontuacao++;
                     } else {
-                        System.out.println("Resposta incorreta!");
+                        System.out.println("Que pena, você errou!");
                         contp2++;
                     }
                     break;
                 case "e":
                 case "E":
                     if (alternativasp2.get(4).equals("I,II e III")) {
-                        System.out.println("Resposta correta!");
+                        System.out.println("Parabéns, você acertou!");
                         acertoup2 = true;
                         pontuacao++;
                     } else {
-                        System.out.println("Resposta incorreta!");
+                        System.out.println("Que pena, você errou!");
                         contp2++;
                     }
                     break;
                 default:
-                    System.out.println("Escolha inválida!");
+                    System.out.println("Resposta inválida! Tente Novamente!");
             }
         } while (!acertoup2 && contp2 <=2);
-            System.out.println("*--------------***--------------*");
-            System.out.println("Sua pontuação é de: "+ pontuacao+" pontos");
-            System.out.println("*--------------***--------------*");
+        System.out.println("*--------------***--------------*");
+        System.out.println("Sua pontuação é de: "+ pontuacao+" pontos");
+        System.out.println("*--------------***--------------*");
         //Pergunta III
-            Scanner inputp3 = new Scanner(System.in);
-            boolean acertoup3 = false;
-            int contp3 = 0;
-            List alternativasp3 = new ArrayList();
-            alternativasp3.add("Fluxograma, diagrama e decomposição");
-            alternativasp3.add("Descrição narrativa,  fluxograma e o pseudocódigo"); //resposta correta
-            alternativasp3.add("Descrição interpretativa,  fluxograma e o pseudocódigo");
-            alternativasp3.add("Decomposição, descrição narrativa e diagrama");
-            alternativasp3.add("Nenhuma alternativa está correta");
-            do {
-                Collections.shuffle(alternativasp3);
-                System.out.println("\n3) Agora que você já sabe sobre o que é um algoritmo, de quais maneiras ele pode ser representado:\n");
+        Scanner inputp3 = new Scanner(System.in);
+        boolean acertoup3 = false;
+        int contp3 = 0;
+        List alternativasp3 = new ArrayList();
+        alternativasp3.add("Fluxograma, diagrama e decomposição");
+        alternativasp3.add("Descrição narrativa,  fluxograma e o pseudocódigo"); //resposta correta
+        alternativasp3.add("Descrição interpretativa,  fluxograma e o pseudocódigo");
+        alternativasp3.add("Decomposição, descrição narrativa e diagrama");
+        alternativasp3.add("Nenhuma alternativa está correta");
+        do {
+            Collections.shuffle(alternativasp3);
+            System.out.println("\n3) Agora que você já sabe sobre o que é um algoritmo, de quais maneiras ele pode ser representado:\n");
 
-                System.out.println("a) " + alternativasp3.get(0));
-                System.out.println("b) " + alternativasp3.get(1));
-                System.out.println("c) " + alternativasp3.get(2));
-                System.out.println("d) " + alternativasp3.get(3));
-                System.out.println("e) " + alternativasp3.get(4));
-                System.out.print("Escolha uma alternativa: ");
-                String respostap3 = input.next();
-                switch (respostap3) {
-                    case "a":
-                    case "A":
-                        if (alternativasp3.get(0).equals("Descrição narrativa,  fluxograma e o pseudocódigo")) {
-                            System.out.println("Resposta correta!");
-                            acertoup3 = true;
-                            pontuacao++;
+            System.out.println("a) " + alternativasp3.get(0));
+            System.out.println("b) " + alternativasp3.get(1));
+            System.out.println("c) " + alternativasp3.get(2));
+            System.out.println("d) " + alternativasp3.get(3));
+            System.out.println("e) " + alternativasp3.get(4));
+            System.out.print("Escolha uma alternativa: ");
+            String respostap3 = input.next();
+            switch (respostap3) {
+                case "a":
+                case "A":
+                    if (alternativasp3.get(0).equals("Descrição narrativa,  fluxograma e o pseudocódigo")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup3 = true;
+                        pontuacao++;
 
-                        } else {
-                            System.out.println("Resposta incorreta!");
-                            contp3++;
-                        }
-                        break;
-                    case "b":
-                    case "B":
-                        if (alternativasp3.get(1).equals("Descrição narrativa,  fluxograma e o pseudocódigo")) {
-                            System.out.println("Resposta correta!");
-                            acertoup3 = true;
-                            pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp3++;
+                    }
+                    break;
+                case "b":
+                case "B":
+                    if (alternativasp3.get(1).equals("Descrição narrativa,  fluxograma e o pseudocódigo")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup3 = true;
+                        pontuacao++;
 
-                        } else {
-                            System.out.println("Resposta incorreta!");
-                            contp3++;
-                        }
-                        break;
-                    case "c":
-                    case "C":
-                        if (alternativasp3.get(2).equals("Descrição narrativa,  fluxograma e o pseudocódigo")) {
-                            System.out.println("Resposta correta!");
-                            acertoup3 = true;
-                            pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp3++;
+                    }
+                    break;
+                case "c":
+                case "C":
+                    if (alternativasp3.get(2).equals("Descrição narrativa,  fluxograma e o pseudocódigo")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup3 = true;
+                        pontuacao++;
 
-                        } else {
-                            System.out.println("Resposta incorreta!");
-                            contp3++;
-                        }
-                        break;
-                    case "d":
-                    case "D":
-                        if (alternativasp3.get(3).equals("Descrição narrativa,  fluxograma e o pseudocódigo")) {
-                            System.out.println("Resposta correta!");
-                            acertoup3 = true;
-                            pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp3++;
+                    }
+                    break;
+                case "d":
+                case "D":
+                    if (alternativasp3.get(3).equals("Descrição narrativa,  fluxograma e o pseudocódigo")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup3 = true;
+                        pontuacao++;
 
-                        } else {
-                            System.out.println("Resposta incorreta!");
-                            contp3++;
-                        }
-                        break;
-                    case "e":
-                    case "E":
-                        if (alternativasp3.get(4).equals("Descrição narrativa,  fluxograma e o pseudocódigo")) {
-                            System.out.println("Resposta correta!");
-                            acertoup3 = true;
-                            pontuacao++;
-                        } else {
-                            System.out.println("Resposta incorreta!");
-                            contp3++;
-                        }
-                        break;
-                    default:
-                        System.out.println("Escolha inválida!");
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp3++;
 
-                }
-            } while (!acertoup3 && contp3 <=2);
-            System.out.println("*--------------***--------------*");
-            System.out.println("Sua pontuação é de: "+ pontuacao+" pontos");
-            System.out.println("*--------------***--------------*");
+                    }
+                    break;
+                case "e":
+                case "E":
+                    if (alternativasp3.get(4).equals("Descrição narrativa,  fluxograma e o pseudocódigo")) {
+                        System.out.println("Parabéns, você acertou!");
+                        acertoup3 = true;
+                        pontuacao++;
+                    } else {
+                        System.out.println("Que pena, você errou!");
+                        contp3++;
+                    }
+                    break;
+                default:
+                    System.out.println("Resposta inválida! Tente Novamente!");
+            }
+        } while (!acertoup3 && contp3 <=2);
+        System.out.println("*--------------***--------------*");
+        System.out.println("Sua pontuação é de: "+ pontuacao+" pontos");
+        System.out.println("*--------------***--------------*");
     }
     public static void faseUm() {
         System.out.println();
@@ -974,13 +978,16 @@ public class TheAlgorithmsPrisoner {
                 " \tComputador: Está bem, cansei da brincadeira! Você é uma pessoa bem amarga, aparentemente nossa jornada vai ser ainda mais longa do que eu esperava: nossa jornada terá ao todo 5 trajetórias.\n Se você passar por todas com excelência você está livre para retornar a sua vidinha de sempre.\n Na primeira fase você precisa responder a três questões, se você acertar as três, passa para próxima fase!\n" +
                 "João: E se eu errar?\n" +
                 " \tComputador: Se você errar, você vai ter uma surpresa!\n");
-       questoesFaseUm();
+        //REFERENCIA  FUNÇÃO DAS QUESTÕES DA FASE I
+        questoesFaseUm();
+        //TXT DE PASSAGEM DE FASE
+        System.out.println("\nNessa fase você aprendeu um pouco sobre o pensamento computacional e como ele é o ponto de partida para a aprendizagem, entendimento dos conceitos básicos e aplicabilidade.\nVocê passou para a próxima fase, nesta etapa você vai precisar derrotar o vírus Jellyfish, apenas continue sua jornada.... \n");
+
 
     }
     public static void jogo(){
         System.out.println("\nMuito bem! você escolheu ajudar o João a desvendar o mistério do que aconteceu com o seu Computador....\nEspero que essa jornada seja fácil para vocês dois!");
         faseUm();
-        System.out.println("\nNessa fase você aprendeu um pouco sobre o pensamento computacional e como ele é o ponto de partida para a aprendizagem, entendimento dos conceitos básicos e aplicabilidade.\nVocê passou para a próxima fase, nesta etapa você vai precisar derrotar o vírus Jellyfish, apenas continue sua jornada.... \n");
         faseDois();
         faseTres();
         faseQuatro();
@@ -991,6 +998,8 @@ public class TheAlgorithmsPrisoner {
         Scanner sc = new Scanner(System.in);
         System.out.println("Em um dia como de costume, João levantou, tomou banho, escovou os dentes e tomou o seu café e ligou o computador  para dar continuidade\n ao seu projeto, há dias João tentava ter uma boa ideia para seu trabalho de faculdade, enquanto aguardava ter uma  ideia como em um\n apagão, seu quarto deu lugar a um mundo que não conhecia, uma realidade paralela: ele estava preso dentro do computador.  \n O que João não sabia é que essa aventura estava apenas começando e que para voltar para sua vida cotidiana ele deveria passar por 5 fases,  \n cada uma contendo 3 questões, precisando acertar 3 questões para passar para a próxima fase.\n Gostou da história e deseja ajudar João nessa aventura? Digite 2 para jogar!");
         int resposta = sc.nextInt();
+        //CASO USER SELECIONAR 2 REDIRECIONA PARA O JOGO
+        //DECISÃO | VALIDAÇÃO
         if (resposta == 2){
             faseUm();
         }else {
@@ -1015,7 +1024,9 @@ public class TheAlgorithmsPrisoner {
 
     }
     public static int menu(){
+        //REF CLASSE SCANNER
         Scanner entrada = new Scanner(System.in);
+        //VAR
         int opcao;
         do {
             System.out.println("1 - Instruções");
@@ -1027,15 +1038,19 @@ public class TheAlgorithmsPrisoner {
             switch (opcao) {
                 case 1:
                     instrucoes();
+                    //REFERENCIA FUNCAO
                     break;
                 case 2:
                     jogo();
+                    //REFERENCIA FUNCAO
                     break;
                 case 3:
                     creditos();
+                    //REFERENCIA FUNCAO
                     break;
                 case 4:
                     sair();
+                    //REFERENCIA FUNCAO
                     break;
                 default:
                     System.out.println("*------- OPÇÃO INVÁLIDA, TENTE NOVAMENTE! -------*\"");
