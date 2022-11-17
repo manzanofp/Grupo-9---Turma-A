@@ -13,19 +13,8 @@ public class TheAlgorithmsPrisoner {
         System.out.println("Este jogo foi produzido pelos Desenvolvedores: \n Diego Pedro\n Felipe Manzano\n Sabrina Oliveira\n Talita Brandão\n Yasmin Rodrigues");
     }
     public static void questoesFaseCinco(){
-        System.out.println("ADD QUESTOES FASE IV");
-        
-    }
-    public  static void faseCinco(){
-        System.out.println();
-        System.out.println("*--------------***--------------*");
-        System.out.println("             FASE V              ");
-        System.out.println("*--------------***--------------*");
-        System.out.println();
-        System.out.println("Computador: Essa é a fase final, nela você vai aprender sobre a placa mãe e o vírus  Cosmicstrand, nessa fase você não vai conseguir se comunicar com seus componentes, portanto, não vai conseguir ajudar e nem pedir ajuda.\n");
-    }
-        questoesFaseCinco();
-      Scanner tc = new Scanner(System.in);
+        System.out.println("ADD QUESTOES FASE V");
+           Scanner tc = new Scanner(System.in);
            boolean acertou13 = false;
            int pontuacao = 0;
            int cont13 = 0;
@@ -276,6 +265,17 @@ public class TheAlgorithmsPrisoner {
       System.out.println("*--------------***--------------*");
 
     
+        
+    }
+    public  static void faseCinco(){
+        System.out.println();
+        System.out.println("*--------------***--------------*");
+        System.out.println("             FASE V              ");
+        System.out.println("*--------------***--------------*");
+        System.out.println();
+        System.out.println("Computador: Essa é a fase final, nela você vai aprender sobre a placa mãe e o vírus  Cosmicstrand, nessa fase você não vai conseguir se comunicar com seus componentes, portanto, não vai conseguir ajudar e nem pedir ajuda.\n");
+        questoesFaseCinco();
+     
     }
     public static void questoesFaseQuatro(){
         //Pergunta X
